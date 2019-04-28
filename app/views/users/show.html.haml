@@ -2,10 +2,11 @@
 
 - user_p = present(@user)
 
-- if user_can_edit_user?
-  = link_to edit_user_path(@user), class: 'btn btn-default pull-right', type: 'button' do
-    Settings
-    %span.glyphicon.glyphicon-cog
+.clearfix
+  - if user_can_edit_user?
+    = link_to edit_user_path(@user), class: 'btn btn-default pull-right', type: 'button' do
+      Settings
+      %span.glyphicon.glyphicon-cog
 
 .row
   .pull-left
@@ -19,16 +20,15 @@
       %p.group-aka aka #{@aka.map(&:name).join(', ')}
 
 %p.steam-link-large
-  = user_p.steam_link
   %span.dropdown
     - data = { toggle: :collapse, target: '#steam-id-collapse' }
     %button.btn.btn-link.btn-xs{ type: :button, data: data }
       %span.caret
+  = user_p.steam_link
 
 .pull-right.collapse#steam-id-collapse
   .card.small
     .steam-id-large= @user.steam_32
-    %br
     .steam-id-large= @user.steam_id
 
 .row
@@ -80,7 +80,7 @@
         = link_to team.name, team_path(team)
         - if current_user?
           .button-group.pull-right
-            = button_to leave_team_path(team), method: :patch, class: 'btn btn-danger' do
+            = button_to leave_team_path(team), method: :patch, class: 'btn btn-danger btn-xs' do
               Leave
               %span.glyphicon.glyphicon-remove
 
@@ -107,7 +107,7 @@
   .panel.panel-default
     .panel-heading
       Recent Forum Posts
-      = link_to search_forums_posts_path(user_id: @user.id), class: 'btn btn-default pull-right' do
+      = link_to search_forums_posts_path(user_id: @user.id), class: 'btn btn-default btn-xs pull-right' do
         View All
 
     %ul.list-group

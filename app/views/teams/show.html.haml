@@ -34,8 +34,9 @@
 
   .global-collapsible
     .panel.panel-default
-      .panel-heading
-        = roster_p.title
+      .panel-heading.clearfix
+        %h5.pull-left
+          = roster_p.title
 
         - if user_can_manage_transfers?(roster)
           = link_to edit_roster_path(roster), class: 'btn btn-default pull-right' do

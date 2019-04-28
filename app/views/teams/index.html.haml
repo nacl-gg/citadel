@@ -8,17 +8,16 @@
 %hr
 
 .panel.panel-default
-  - if user_signed_in?
-    .panel-body
-      = link_to new_team_path, class: 'btn btn-default pull-right', type: 'button' do
-        Start Team
-        %span.glyphicon.glyphicon-plus
-
   - if @teams.empty?
     .panel-body No teams found...
-  - else
-    %ul.list-group
-      - present_collection(@teams).each do |teams|
-        %li.list-group-item= teams.link
+
+  %ul.list-group
+    - if user_signed_in?
+      = link_to new_team_path, class: "list-group-item list-group-item-info" do
+        %span.glyphicon.glyphicon-plus
+        Start a new Team
+
+    - present_collection(@teams).each do |teams|
+      %li.list-group-item= teams.link
 
 = bootstrap_paginate @teams
