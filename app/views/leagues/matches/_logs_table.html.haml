@@ -1,0 +1,40 @@
+:ruby
+  require 'net/http'
+  require 'json'
+  require 'steam_id'
+
+  uri = URI.parse("https://logs.tf/json/#{logs_id}")
+  resp = Net::HTTP.start(uri.host, uri.port, :use_ssl => true) do |http|
+    http.get uri
+  end
+  logs = JSON.parse(resp.body())
+
+%table.table.table-condensed
+  %thead
+    %tr
+      %th
+      %th
+      %th K
+      %th A
+      %th D
+      %th K/D
+      %th K+A/D
+      %th DA
+      %th DA/M
+  %tbody
+    - logs['players'].sort_by { |p| -p[1]['kills'] }.each do |player|
+      - id, player = player
+      %tr{ class: player['team'].downcase }
+        %th
+        %th= link_to logs['names'][id], "/users/steam_id/#{SteamId.to_64 id[1..-2]}"
+        %th= player['kills']
+        %th= player['assists']
+        %th= player['deaths']
+        %th= player['kpd']
+        %th= player['kapd']
+        %th= player['dmg']
+        %th= player['dapm']
+
+
+= link_to 'Open logs.tf', "https://logs.tf/#{logs_id}",
+  target: "_blank", rel: "noopener", class: "btn btn-info btn-sm pull-right"

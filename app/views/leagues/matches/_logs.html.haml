@@ -3,21 +3,21 @@
     .panel-heading
       %ul.nav.nav-pills
         %li.disabled
-          %a
-            Match Stats
+          %a Match Logs
+
         - match.rounds.each do |round|
           - klass = round == @round ? 'active' : ''
 
           %li{ class: klass }
-            %a{ data: { toggle: 'tab' }, href: "##{round.to_s.parameterize}" }
+            %a{ data: { toggle: 'tab' }, href: "#logs-#{round.id}" }
               = round.map.name
 
     .panel-body.tab-content
       - match.rounds.each do |round|
         - klass = round == @round ? ' in active' : ''
 
-        %div{ id: round.to_s.parameterize, class: 'tab-pane fade' + klass }
+        %div{ id: "logs-#{round.id}", class: 'tab-pane fade' + klass }
           - if round.logs_id
-            = round.map.name
+            = render "leagues/matches/logs_table", logs_id: round.logs_id
           - else
             Logs were not provided yet
