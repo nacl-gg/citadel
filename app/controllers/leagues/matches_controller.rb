@@ -75,6 +75,7 @@ module Leagues
       match_show_includes
 
       @comm = League::Match::Comm.new(match: @match)
+      @round = @match.rounds.first
     end
 
     def edit
