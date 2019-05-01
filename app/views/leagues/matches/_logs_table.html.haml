@@ -16,7 +16,7 @@
     - logs['players'].sort_by { |p| -p[1]['kills'] }.each do |player|
       - id, player = player
       %tr{ class: "team-#{player['team'].downcase}" }
-        %td.class-icon(class="class-#{player['class_stats'][0]['type']}")
+        %td.class-icon{ class: "class-#{player['class_stats'][0]['type']}" }
         %td= link_to player['name'], "/users/steam_id/#{SteamId.to_64 id[1..-2]}"
         %td= player['kills']
         %td= player['assists']
@@ -27,4 +27,4 @@
         %td= player['dapm']
 
 = link_to 'Open logs.tf', "https://logs.tf/#{round.logs_id}",
-  target: "_blank", rel: "noopener", class: "btn pull-right"
+  target: '_blank', rel: 'noopener', class: 'btn pull-right'
