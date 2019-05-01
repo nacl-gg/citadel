@@ -1,13 +1,4 @@
-:ruby
-  require 'net/http'
-  require 'json'
-  require 'steam_id'
-
-  uri = URI.parse("https://logs.tf/json/#{logs_id}")
-  resp = Net::HTTP.start(uri.host, uri.port, :use_ssl => true) do |http|
-    http.get uri
-  end
-  logs = JSON.parse(resp.body())
+- logs = round.fetch_logs
 
 %table.table.table-condensed
   %thead
@@ -24,17 +15,16 @@
   %tbody
     - logs['players'].sort_by { |p| -p[1]['kills'] }.each do |player|
       - id, player = player
-      %tr{ class: player['team'].downcase }
-        %th
-        %th= link_to logs['names'][id], "/users/steam_id/#{SteamId.to_64 id[1..-2]}"
-        %th= player['kills']
-        %th= player['assists']
-        %th= player['deaths']
-        %th= player['kpd']
-        %th= player['kapd']
-        %th= player['dmg']
-        %th= player['dapm']
+      %tr{ class: "team-#{player['team'].downcase}" }
+        %td.class-icon(class="class-#{player['class_stats'][0]['type']}")
+        %td= link_to player['name'], "/users/steam_id/#{SteamId.to_64 id[1..-2]}"
+        %td= player['kills']
+        %td= player['assists']
+        %td= player['deaths']
+        %td= player['kpd']
+        %td= player['kapd']
+        %td= player['dmg']
+        %td= player['dapm']
 
-
-= link_to 'Open logs.tf', "https://logs.tf/#{logs_id}",
-  target: "_blank", rel: "noopener", class: "btn btn-info btn-sm pull-right"
+= link_to 'Open logs.tf', "https://logs.tf/#{round.logs_id}",
+  target: "_blank", rel: "noopener", class: "btn pull-right"
