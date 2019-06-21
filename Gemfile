@@ -60,7 +60,7 @@ group :test do
   gem 'simplecov'
 
   # Use for validation testing
-  gem 'shoulda-matchers'
+  gem 'shoulda-matchers', '>= 3.1.2', '< 4'
 
   # Clean db for tests
   gem 'database_cleaner'
@@ -75,7 +75,7 @@ group :test do
   gem 'rubocop', '~> 0.58', require: false
   gem 'haml_lint', require: false
   gem 'rails_best_practices', require: false
-  gem 'reek', '~> 5', require: false
+  gem 'reek', '>= 5.3', '< 5.4', require: false
 
   # Coveralls
   gem 'coveralls'
@@ -100,4 +100,7 @@ group :development do
   gem 'capistrano-bundler', require: false
   gem 'capistrano-rails', require: false
   gem 'capistrano-passenger', require: false
+
+  gem 'ed25519', '>= 1.2', '< 2.0', require: false
+  gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0', require: false
 end

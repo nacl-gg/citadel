@@ -1,36 +1,36 @@
 .panel.panel-default
   - if user_can_create_thread? || !threads.empty?
     .panel-heading
-      - if user_can_create_thread?
-        .pull-right
-          = link_to new_forums_thread_path(topic: parent_topic), class: 'btn btn-default' do
-            Create
-            %span.glyphicon.glyphicon-plus
-
-      Threads
+      %h4 Threads
 
     %ul.list-group
+      - if user_can_create_thread?
+        = link_to new_forums_thread_path(topic: parent_topic), class: 'list-group-item list-group-item-info' do
+          %span.glyphicon.glyphicon-plus
+          Create a new Thread
+
       - threads.each do |thread|
         - thread_p = present(thread)
         %li.list-group-item
           = thread_p.link
 
-          .pull-right.label.alert-info= pluralize(thread.posts_count, 'Post')
+          %h5.pull-right.label.alert-info
+            = pluralize(thread.posts_count, 'Post')
 
   - if user_can_manage_topic? || !topics.empty?
     .panel-heading
-      - if user_can_manage_topic?
-        .pull-right
-          = link_to new_forums_topic_path(parent: parent_topic), class: 'btn btn-default' do
-            Create
-            %span.glyphicon.glyphicon-plus
-
-      Topics
+      %h4 Topics
 
     %ul.list-group
+      - if user_can_manage_topic?
+        = link_to new_forums_topic_path(parent: parent_topic), class: 'list-group-item list-group-item-info' do
+          %span.glyphicon.glyphicon-plus
+          Create a new Topic
+
       - topics.each do |topic|
         - topic_p = present(topic)
         %li.list-group-item
           = topic_p.link
 
-          .pull-right.label.alert-info= pluralize(topic.threads_count, 'Thread')
+          %h6.pull-right.label.alert-info
+            = pluralize(topic.threads_count, 'Thread')

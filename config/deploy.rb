@@ -2,10 +2,10 @@
 lock '3.11.0'
 
 set :application, 'citadel'
-set :rvm_ruby_string, 'ruby-2.5.0'
+set :rvm_ruby_string, 'ruby-2.5.5'
 
 # git settings
-set :repo_url, 'git@github.com:ozfortress/citadel.git'
+set :repo_url, 'https://github.com/nacl-gg/citadel'
 set :branch, :master
 
 # Default deploy_to directory is /var/www/my_app_name

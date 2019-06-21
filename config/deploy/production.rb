@@ -55,4 +55,4 @@
 #   }
 
 # Temporary deploy server
-server '139.162.36.101', roles: [:app, :web, :db], primary: true
+server '68.183.50.247:60022', user: 'citadel', roles: [:app, :web, :db], primary: true

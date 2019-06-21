@@ -7,17 +7,17 @@ class Team
     end
 
     def leave_button
-      content = safe_join(['Leave', tag(:span, class: 'glyphicon glyphicon-remove')])
+      content = safe_join(['Leave ', tag(:span, class: 'glyphicon glyphicon-remove')])
 
       link_to(content, leave_team_path(player.team),
-              method: :patch, class: 'btn btn-danger', data: { confirm: leave_confirm_message })
+              method: :patch, class: 'btn btn-danger btn-xs', data: { confirm: leave_confirm_message })
     end
 
     def kick_button
-      content = safe_join(['Kick', tag(:span, class: 'glyphicon glyphicon-remove')])
+      content = safe_join(['Kick ', tag(:span, class: 'glyphicon glyphicon-remove')])
 
       link_to(content, kick_team_path(player.team, user_id: player.user.id),
-              method: :patch, class: 'btn btn-danger', data: { confirm: kick_confirm_message })
+              method: :patch, class: 'btn btn-danger btn-xs', data: { confirm: kick_confirm_message })
     end
 
     def leave_confirm_message
