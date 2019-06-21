@@ -75,6 +75,7 @@ module Leagues
       match_show_includes
 
       @comm = League::Match::Comm.new(match: @match)
+      @round = @match.rounds.first
     end
 
     def edit
@@ -133,7 +134,7 @@ module Leagues
       if user_can_edit_league?
         params.require(:match)
               .permit(:status, :forfeit_by,
-                      rounds_attributes: [:id, :home_team_score, :away_team_score])
+                      rounds_attributes: [:id, :home_team_score, :away_team_score, :logs_id])
       elsif user_can_either_teams?
         report_scores_by_team_params
       end
@@ -141,7 +142,7 @@ module Leagues
 
     def report_scores_by_team_params
       attrs = params.require(:match)
-                    .permit(rounds_attributes: [:id, :home_team_score, :away_team_score])
+                    .permit(rounds_attributes: [:id, :home_team_score, :away_team_score, :logs_id])
 
       attrs[:status] = if user_can_home_team?
                          :submitted_by_home_team

@@ -1,3 +1,6 @@
+require 'json'
+require 'net/http'
+require 'steam_id'
 require 'validators/reduce_errors_validator'
 
 class League
@@ -50,6 +53,22 @@ class League
         self.score_difference = home_team_score - away_team_score
 
         update_wl_cache
+      end
+
+      def logs?
+        logs_id != nil
+      end
+
+      def fetch_logs
+        resp = Net::HTTP.start('logs.tf', 443, use_ssl: true) do |http|
+          http.get URI.parse("https://logs.tf/json/#{logs_id}")
+        end
+        json = JSON.parse(resp.body)
+        json['players'].each do |p|
+          user = User.find_by(steam_id: SteamId.to_64(p[0][1..-2]))
+          p[1]['name'] = user ? user.name : 'UNREGISTERED'
+        end
+        json
       end
 
       private

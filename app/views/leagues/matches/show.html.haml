@@ -41,4 +41,6 @@
   - if @match.home_team.schedule_data && @match.away_team.schedule_data
     = render 'leagues/matches/schedule', match: @match, league: @league
 
+  = render 'leagues/matches/logs', match: @match, target_round: @round
+
   = render 'leagues/matches/match_comms', league: @league, match: @match, comm: @comm, comms: @comms

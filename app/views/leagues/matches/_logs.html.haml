@@ -1,0 +1,24 @@
+- if match.rounds.any?(&:has_logs?)
+  .panel.panel-default
+    .panel-heading
+      %ul.nav.nav-pills
+        %li.disabled
+          %a Match Logs
+
+        - match.rounds.each do |round|
+          - klass = round == target_round ? 'active' : ''
+
+          %li{ class: klass }
+            %a{ data: { toggle: 'tab' }, href: "#logs-#{round.id}" }
+              - map = round.map # wtf ruby linters
+              = map.name
+
+    .panel-body.tab-content
+      - match.rounds.each do |round|
+        - klass = round == target_round ? ' in active' : ''
+
+        %div{ id: "logs-#{round.id}", class: 'tab-pane fade' + klass }
+          - if round.has_logs?
+            = render 'leagues/matches/logs_table', round: round
+          - else
+            Logs were not provided yet
