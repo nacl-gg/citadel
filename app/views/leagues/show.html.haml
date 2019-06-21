@@ -29,9 +29,9 @@
     = render 'leagues/matches/matches_table', matches: matches, roster: nil
 
 - else
-  .alert.alert-info
+  .alert.alert-info.clearfix
     = link_to 'All Matches', league_matches_path(@league),
-              class: 'btn btn-default pull-right'
+              class: 'alert-link pull-right'
     - if @league.completed?
       This league has been completed
     - elsif @roster
