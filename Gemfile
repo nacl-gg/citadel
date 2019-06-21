@@ -75,7 +75,7 @@ group :test do
   gem 'rubocop', '~> 0.58', require: false
   gem 'haml_lint', require: false
   gem 'rails_best_practices', require: false
-  gem 'reek', '~> 5', require: false
+  gem 'reek', '>= 5.3', '< 5.4', require: false
 
   # Coveralls
   gem 'coveralls'
