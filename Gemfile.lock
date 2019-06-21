@@ -331,8 +331,8 @@ GEM
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
     sexp_processor (4.12.1)
-    shoulda-matchers (4.1.0)
-      activesupport (>= 4.2.0)
+    shoulda-matchers (3.1.3)
+      activesupport (>= 4.0.0)
     simplecov (0.16.1)
       docile (~> 1.1)
       json (>= 1.8, < 3)
@@ -429,7 +429,7 @@ DEPENDENCIES
   rspec-rails (~> 3.8)
   rubocop (~> 0.58)
   sass-rails (~> 5.0)
-  shoulda-matchers
+  shoulda-matchers (>= 3.1.2, < 4)
   simplecov
   spring
   tournament-system (~> 2.0)

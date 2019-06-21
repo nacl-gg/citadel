@@ -60,7 +60,7 @@ group :test do
   gem 'simplecov'
 
   # Use for validation testing
-  gem 'shoulda-matchers'
+  gem 'shoulda-matchers', '>= 3.1.2', '< 4'
 
   # Clean db for tests
   gem 'database_cleaner'
