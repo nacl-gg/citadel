@@ -2,6 +2,12 @@ Rails.application.routes.draw do
   match '/404', to: 'errors#not_found', via: :all
   match '/500', to: 'errors#internal_server_error', via: :all
 
+  namespace :link do
+    get '/discord', to: redirect("https://discord.gg/ZCv9BTR")
+    get '/twitter', to: redirect("https://twitter.com/NaClgg_")
+    get '/github', to: redirect("https://github.com/NaCl-gg")
+  end
+
   namespace :api do
     namespace :v1 do
       resources :leagues, shallow: true, only: [:show] do
