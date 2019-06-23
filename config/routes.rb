@@ -23,8 +23,6 @@ Rails.application.routes.draw do
 
   root 'pages#home'
 
-  get 'pages/home'
-
   get 'admin', to: 'admin#index'
   get 'statistics',  to: 'admin#statistics', as: 'admin_statistics'
 

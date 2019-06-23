@@ -155,7 +155,7 @@ class UsersController < ApplicationController
   end
 
   def require_users_permission
-    redirect_to pages_home_path unless user_can_edit_users?
+    redirect_to root_path unless user_can_edit_users?
   end
 
   def require_user_confirmation_token

@@ -199,13 +199,13 @@ describe UsersController do
 
       get :names
 
-      expect(response).to redirect_to(pages_home_path)
+      expect(response).to redirect_to(root_path)
     end
 
     it 'redirects for public' do
       get :names
 
-      expect(response).to redirect_to(pages_home_path)
+      expect(response).to redirect_to(root_path)
     end
   end
 
