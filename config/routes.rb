@@ -4,8 +4,8 @@ Rails.application.routes.draw do
 
   namespace :link do
     get '/discord', to: redirect("https://discord.gg/ZCv9BTR")
-    get '/twitter', to: redirect("https://twitter.com/NaClgg_")
-    get '/github', to: redirect("https://github.com/NaCl-gg")
+    get '/twitter', to: redirect("https://twitter.com/NACLgg_")
+    get '/github', to: redirect("https://github.com/NACL-gg")
   end
 
   namespace :api do
