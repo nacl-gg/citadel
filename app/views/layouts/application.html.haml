@@ -6,7 +6,7 @@
     %meta{ name: 'viewport', content: viewport }
     %title
       - if content_for :title
-        = content_for(:title) ++ " | NACL"
+        = "#{content_for :title} | NACL"
       - else
         NACL
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
