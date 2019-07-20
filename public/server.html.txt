@@ -1,0 +1,49 @@
+<h1>Server Configuration</h1>
+<p>Last Update: 2019-07-20</p>
+<p>Current version: v2019.01</p>
+
+<h2>Requirements</h2>
+<ul>
+<li>The server must be hosted in North America</li>
+<li>The server must be up to date</li>
+<li>The server must be protected with a non-trivial password</li>
+<li>The server logs must be uploaded to <a href="https://logs.tf">logs.tf</a> and the link saved in the match report</li>
+<li>The server demo must be uploaded to <a href="https://demos.tf">demos.tf</a> and the link saved in the match report</li>
+</ul>
+
+<h2>Installation</h2>
+<p>Download the following files to your server's tf/cfg directory:</p>
+<ul>
+<li>
+<a href="https://raw.githubusercontent.com/nacl-gg/cfg/master/nacl.cfg">
+https://raw.githubusercontent.com/nacl-gg/cfg/master/nacl.cfg
+</a>
+</li>
+<li>
+<a href="https://whitelist.tf/competitive_6v6.txt">
+https://whitelist.tf/competitive_6v6.txt
+</a>
+</li>
+</ul>
+
+<h2>Usage</h2>
+<p>To load the server configurations, the designated server administrator must run <code>rcon exec nacl</code>, after which the server will be configured for 5CP. To change gamemode configurations, the designated server administrator must run <code>rcon nacl_5cp</code>, <code>rcon nacl_5cp_gc</code> or <code>rcon nacl_koth</code> accordingly. The commands <code>rcon nacl</code> and <code>rcon nacl_help</code> are present in order to help. The CVars <code>sv_pure</code> and <code>tv_enable</code> require a map change to be updated.</p>
+
+<h2>Optional Plugins</h2>
+<p>Some server plugins are optional and allowed, any other plugin not on this list is strictly forbidden from usage during match play.
+<ul>
+<li><a href="http://tftrue.esport-tools.net/">TFTrue</a></li>
+<li><a href="https://demos.tf/upload">demos.tf</a></li>
+</ul>
+</p>
+
+<h2>Server Hosts</h2>
+<p><a href="https://na.serveme.tf">Arie's na.serveme.tf</a> should be pre-configured to handle match settings; when setting up a reservation, make sure that:
+<ul>
+<li>a non-trivial password is set (do not re-use previous ones)</li>
+<li>a considerably difficult rcon password is set</li>
+<li>the demos.tf option is enabled</li>
+<li>the server config is set to <code>nacl</code></li>
+<li>the item whitelist is set to default (the server configuration will change it automatically)</li>
+</ul>
+We highly suggest that you <a href="https://na.serveme.tf/donate">buy premium</a> if you plan on using it for matches.</p>

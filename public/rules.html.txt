@@ -1,0 +1,241 @@
+<h1>Ruleset</h1>
+<p>Last update: 2019-07-20</p>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#rosters">Rosters</a><ul>
+<li><a href="#restrictions">Restrictions</a></li>
+<li><a href="#match-eligibility">Match Eligibility</a></li>
+</ul></li>
+<li><a href="#matches">Matches</a><ul>
+<li><a href="#scheduling">Scheduling</a></li>
+<li><a href="#servers">Servers</a></li>
+<li><a href="#match-start">Match Start</a></li>
+<li><a href="#map-veto">Map Veto</a></li>
+<li><a href="#during-match">During Match</a></li>
+<li><a href="#post-match">Post-match</a></li>
+</ul></li>
+<li><a href="#competitive-integrity">Competitive Integrity</a><ul>
+<li><a href="#single-account-single-user">Single Account, Single User</a></li>
+<li><a href="#conduct-policy">Conduct Policy</a></li>
+<li><a href="#representation">Representation</a></li>
+<li><a href="#match-play">Match Play</a></li>
+<li><a href="#unfair-play">Unfair Play</a></li>
+<li><a href="#manipulation">Manipulation</a></li>
+<li><a href="#forfeits">Forfeits</a></li>
+</ul></li>
+<li><a href="#sanctions">Sanctions</a><ul>
+<li><a href="#team">Team</a></li>
+<li><a href="#player">Player</a></li>
+</ul></li>
+<li><a href="#enforcement">Enforcement</a><ul>
+<li><a href="#structure">Structure</a></li>
+<li><a href="#process">Process</a></li>
+<li><a href="#extraordinary-action">Extraordinary Action</a></li>
+</ul></li>
+<li><a href="#league">League</a><ul>
+<li><a href="#divisions">Divisions</a></li>
+<li><a href="#format">Format</a></li>
+<li><a href="#consolidation">Consolidation</a></li>
+<li><a href="#team-placement">Team Placement</a></li>
+<li><a href="#game-configuration">Game Configuration</a></li>
+</ul></li>
+</ul>
+</nav>
+<h2 id="rosters">Rosters</h2>
+<h3 id="restrictions">Restrictions</h3>
+<p>There is no limit to the number of Players a Team roster may have. Prior to the start of a competition, the roster a Team intends to use must be submitted for consideration by administrators, including the intended starting Lineup.</p>
+<p>While the competition is ongoing, a Team may only add four players to its roster. Additions may take place at any time before a specified roster lock period; any additions made during a roster lock period require approval from a competition administrator.</p>
+<p>Players may transfer between Teams in the same division while a competition is active without restriction. A Player joining a roster for the first time while a competition is active or transferring to a Team roster in a different division must obtain administrator approval to do so.</p>
+<h3 id="match-eligibility">Match Eligibility</h3>
+<p>For each match, a Team must provide a complete Lineup that is Eligible to play; failure to do so may result in the Team being assessed with a Team Penalty and/or forfeiting a game or match.</p>
+<p>An Eligible Lineup must contain six Players. In specified lower divisions, five Players may be accepted as an Eligible Lineup, but the Team may be assessed with a Team Warning for failing to provide a complete Lineup.</p>
+<p>For the first round of a competition, the Lineup a Team uses for a match must contain a majority of Players specified in the starting Lineup submitted prior to the competition start in order to be Eligible. For further rounds, the Lineup a Team uses is Eligible if a majority of players on the Lineup have played in a majority of the maps the Team has played thus far in the competition.</p>
+<p>In most cases, the Players in a Lineup must be on the Team’s roster. A Player may only play matches as part of a Team’s roster for one Team per competition round, and is considered to be a part of that Team’s roster for the remainder of the competition round even if they transfer to a different Team during the competition round.</p>
+<p>A Lineup may utilize one Player currently or most previously rostered for another Team in the same division; if approval is given by the opponent (except in specified lower divisions where no approval is required), the Lineup will be considered Eligible. In order to utilize a Player not currently or most previously rostered in the same division, or to utilize multiple Players in this fashion, administrator approval is required in addition to opponent approval for the Lineup to be considered Eligible. Players who have already played a match for a Team previously in the same competition (whether on the roster or not) may not be used in this fashion, and must be present on the Team’s roster to play further matches for the Team.</p>
+<p>Requests and approvals to use an unrostered Player must be documented on the appropriate match page.</p>
+<h2 id="matches">Matches</h2>
+<h3 id="scheduling">Scheduling</h3>
+<p>A competition administrator will specify a certain scheduling period of consecutive days (e.g. the five days between Sunday and Thursday inclusive) in which the match shall be played, as well as a specific time the match will be played. The day the match is played will be selected by the following procedure:</p>
+<ul>
+<li>Each Team will privately submit to the competition administrator up to a certain administrator-specified number of days (e.g. up to two) that it cannot play by a given scheduling deadline.</li>
+<li>The competition administrator will look at the days remaining after removing the days submitted by either Team. If only one day remains, the match will be scheduled for that day. If more than one day remains, the match will be scheduled for an administrator-specified (typically randomly-selected) day among those remaining.</li>
+</ul>
+<p>Alternatively, the two Teams may negotiate and jointly submit a day and time the match will be played prior to the scheduling deadline, as long as the match is played within the specified scheduling period.</p>
+<p>If a Team fails to respond by a given deadline, it will be assessed a Team Warning, and the match may be scheduled without their input; if the Team’s failure to respond prevents the match from being played, the Team will Forfeit the match.</p>
+<h3 id="servers">Servers</h3>
+<p>Servers used to play a match must be configured as specified by NACL. Failure to use a server with the correct configuration may result in one or both Teams being assessed a Team Warning, and in egregious cases Forfeiting the match.</p>
+<p>The same server shall be used to play the entire match, except in extreme circumstances that require the server to be changed (such as multiple Players having connection issues or the server itself being unstable). Both Teams must verify that the server is suitable to play the match prior to match start, and may request a server change if the server is unsuitable due to connection issues or instability.</p>
+<p>Unless Teams come to a mutual agreement otherwise, the server used for the match must be located in the central United States (e.g. Chicago).</p>
+<h3 id="match-start">Match Start</h3>
+<p>A match must be played at the scheduled time; if it must be played at a different time, a new time must be decided with mutual agreement from both Teams and approved by a competition administrator prior to both the originally scheduled and newly rescheduled time. Failure to play a match at the scheduled time will result in both teams being assessed a Team Warning, and failure to play the match within the scheduling period may result in one or both Teams Forfeiting the match.</p>
+<p>In order to play a match, a Team must have an Eligible Lineup available to play at the scheduled match time; failure to do so may result in the Team being assessed with a Team Warning. If a Team does not have an Eligible Lineup fifteen minutes after the scheduled match time, the Team may be required to Forfeit the match.</p>
+<h3 id="map-veto">Map Veto</h3>
+<p>If the maps for the match are not predetermined, a map veto shall be conducted at match start using the applicable process described below. If one of the Teams is designated as the higher seed for the match, it shall pick whether to be A or B during the picking process; if no seeds are designated for the match, the Teams will flip a coin (or use another random selection method) to decide which team will pick whether to be A or B.</p>
+<p>The results of the map veto must be posted to the match page immediately after its conclusion; failure to do so may result in one or both Teams being assessed with a Team Warning.</p>
+<h4 id="single-map">Single Map</h4>
+<ul>
+<li>A bans two maps</li>
+<li>B bans three maps</li>
+<li>A picks map</li>
+</ul>
+<h4 id="two-maps">Two Maps</h4>
+<ul>
+<li>B bans one map</li>
+<li>A bans two maps</li>
+<li>B bans one map</li>
+<li>A picks map #1</li>
+<li>B picks map #2</li>
+</ul>
+<h4 id="best-of-three-series">Best-of-Three Series</h4>
+<ul>
+<li>A bans one map</li>
+<li>B bans one map</li>
+<li>A picks map #1</li>
+<li>B picks map #2</li>
+<li>B bans one map</li>
+<li>A picks map #3</li>
+</ul>
+<h4 id="best-of-five-series">Best-of-Five Series</h4>
+<ul>
+<li>A bans one map</li>
+<li>B bans one map</li>
+<li>A picks map #1</li>
+<li>B picks map #2</li>
+<li>A picks map #3</li>
+<li>B picks map #4</li>
+<li>remaining map is #5</li>
+</ul>
+<h3 id="during-match">During Match</h3>
+<p>Prior to each game in a series, the server hosting the match should be prepared with the appropriate configuration as quickly as possible. Once the server is ready, each Team has five minutes to get its Lineup in the server. If a Team failures to get its Lineup in the server within five minutes, it may be assessed a Team Warning and/or required to Forfeit the game.</p>
+<p>Each Team will be permitted to use one tactical pause of five minutes during each game. This tactical pause may only be taken between game rounds. A Team that uses more than one tactical pause or delays the game further than the maximum pause length may be assessed a Team Penalty, and may Forfeit the game in egregious circumstances.</p>
+<p>If Players are having technical difficulties during a game, their Team may request a technical pause of three minutes. During this time, the Players affected may attempt to resolve the difficult, or may be swapped out for replacement Players (provided the Lineup after the replacement is Eligible). If a technical pause is used when a Player is not having technical difficulties, or a technical pause is extended further the limit, the Team may be assessed a Team Penalty and/or required to Forfeit the game.</p>
+<p>Both tactical and technical pauses may be taken immediately by the Team using them. A pause may only be ended by the Team who initiated the pause with a 30-second warning.</p>
+<p>In a series consisting of multiple games, there shall be a ten-minute break between games. The Teams may mutually agree to shorten, extend, or skip this break. After the break, both Teams must be ready to play the next game. If a Team is not ready to play the game after the break, it may be assessed a Team Warning and/or required to Forfeit the game.</p>
+<p>A Team may make any changes to its Lineup between games, provided that the new Lineup for the next game is Eligible. If the Lineup is not Eligible, the Team may be assessed a Team Penalty and/or required to Forfeit the game.</p>
+<h3 id="post-match">Post-match</h3>
+<p>After the end of a match, one or both Team leaders must report the result by the specified reporting deadline. When reporting the result, a demo of the match from the server (SourceTV demo) and the log generated by the server during the match must both be provided. Failure to report the results with the match demo and log may result in one or both teams being assessed a Team Warning, and failure to report results by the reporting deadline may result in both Teams being assessed a Forfeit for the match.</p>
+<p>Each Player who participates in a match must also upload their client point-of-view (POV) demo by the specified reporting deadline. Failure to do so may result in a Player Warning. If more than one Player on a Team fails to upload a client point-of-view demo for a particular match, the Team may be assessed a Team Warning.</p>
+<h2 id="competitive-integrity">Competitive Integrity</h2>
+<p>NACL is a competitive platform, and all players are expected to conform to the highest standards of competitive integrity.</p>
+<h3 id="single-account-single-user">Single Account, Single User</h3>
+<p>If a Player is using multiple accounts to play in NACL, the Player will be Suspended for a minimum of three months from all NACL competitions, and all alternate accounts will be permanently Suspended.</p>
+<p>If multiple Players are using the same account to play in NACL, the Players involved will be Suspended for a minimum of three months from all NACL competitions.</p>
+<h3 id="conduct-policy">Conduct Policy</h3>
+<p>Players are expected to behave respectfully, including but not limited to staff, other players, and community organizations. Players who conduct themselves poorly while playing NACL may face disclipinary action at the discretion of competition administrators. In addition, egregious conduct that does not occur within the context of NACL may be penalized at the discretion of the NACL’s Competition Director.</p>
+<h3 id="representation">Representation</h3>
+<p>Players will be primarily referred to by their alias, which they will set upon registration. This alias must not be offensive; a Player with an offensive alias may be assessed with a Player Penalty and will be required to change the alias.</p>
+<p>Players may only change their alias with the approval of NACL administration.</p>
+<h3 id="match-play">Match Play</h3>
+<p>When playing a match, Players must use their current league alias, as well as an avatar that does not contain explicit or otherwise excessively offensive content. Failure to do so may result in the Player being assessed a Player Warning or Player Penalty, depending on the severity of the violation.</p>
+<p>Players may engage in innocuous “trash talk” during the course of a match, but any malicious or offensive voice or text chat will result in the Players involved being assessed Player Penalties.</p>
+<h3 id="unfair-play">Unfair Play</h3>
+<p>NACL has a no-tolerance policy for cheating and other actions which result in unfair playing conditions. Any such action taken intentionally will result in the Team being required to Forfeit any affected games. In addition, the Players taking such action will be Suspended from all NACL competitions for a length of time at the discretion of the NACL’s Competition Director.</p>
+<p>The NACL Unfair Play Team is tasked with finding violations of competitive integrity, and will report on any found to the NACL Competition Director and competition administrators for enforcement.</p>
+<h4 id="cheating">Cheating</h4>
+<p>Cheating is an especially egregious form of unfair play. Players who cheat within NACL will be Suspended for a year from all NACL competitions on their first offense, and will be permanently Suspended from all NACL competitions on any subsequent offense. In addition, all matches the Player is found to be cheating in will be Forfeited by their Team, and the Team may also face further consequences such as Team Penalties and Disqualification.</p>
+<p>Players found to be cheating on other platforms will also be banned along the same guidelines. However, unless the Player is found to be cheating within NACL, no other action will be taken.</p>
+<h4 id="exploits">Exploits</h4>
+<p>Using exploits to gain an unfair advantage is also forbidden. Players and Teams using exploits will Forfeit affected games and receive Player Warnings and Team Warnings, and may be Suspended or Disqualified for egregious instances.</p>
+<p>If anyone is unsure if something will be considered an exploit, they may contact the NACL Unfair Play Team to receive clarification. The following common exploits are known and will receive disciplinary action if used:</p>
+<ul>
+<li>taunt-sliding to affect hitboxes</li>
+<li>reconnecting to a server to reset a respawn timer</li>
+<li>building Ubercharge while a game is paused</li>
+</ul>
+<h3 id="manipulation">Manipulation</h3>
+<p>Improperly manipulating league competitions (e.g. predetermining a match result with another team, submitting invalid results) is strictly forbidden and will be punished with Team Penalties, Forfeits, and Disqualification at the discretion of competition administrators based on the offense.</p>
+<h3 id="forfeits">Forfeits</h3>
+<p>A Team that receives Forfeits in multiple competition rounds may be Disqualified from the competition at the discretion of competition administrators.</p>
+<h2 id="sanctions">Sanctions</h2>
+<h3 id="team">Team</h3>
+<h4 id="team-warning">Team Warning</h4>
+<p>For a minor infraction, a Team may receive a Team Warning. Team Warnings do not come with any immediate consequence, but will accumulate over the course of a competition. If a Team accumulates three Team Warnings, a Team Penalty will be immediately assessed and three Team Warnings will be cleared. All Team Warnings accumulated will be cleared between certain competition stages (e.g. prior to the start of a League Postseason and immediately after the conclusion of a League Postseason).</p>
+<h4 id="team-penalty">Team Penalty</h4>
+<p>For a major infraction or repeated minor infractions, a Team may receive a Team Penalty. A Team Penalty will be applied as if the Team had received a game loss (e.g. in a League Regular Season, a loss of a standings point, and in a League Postseason, a Forfeit of a game in the Team’s immediately following game). At the discretion of a competition administrator, the Team may also be deducted rewards on the basis of receiving a Team Penalty (e.g. a percentage of the Team’s prize and/or automatic qualification to a future competition). Team Penalties will accumulate over the course of a competition. If a Team receives two Team Penalties over the course of a competition, the Team will be immediately Disqualified. Team Penalties will generally be cleared between competitions (though they may carry over to a future competition at the discretion of a competition administrator).</p>
+<h4 id="forfeit">Forfeit</h4>
+<p>In appropriate circumstances, a Team may be assessed a Forfeit, which may be applied at the game round, game, or match level. A Team assessed with a Forfeit is treated as if they lost the game round, game, or match in question. If both Teams are assessed with a Forfeit, they shall both be treated as if they had received a loss wherever possible. Forfeits may be applied retroactively when necessary.</p>
+<h4 id="disqualification">Disqualification</h4>
+<p>For a severe infraction or repeated major infractions, a Team may be Disqualified. A Team that has been Disqualified will be retroactively assessed losses in all matches they have participated in, will not be allowed to play any further matches in the competition, and will lose all rewards earned as a result of participation in a competition. Players that are part of a Disqualified Team may also receive disciplinary action at the discretion of a competition administrator.</p>
+<h3 id="player">Player</h3>
+<h4 id="player-warning">Player Warning</h4>
+<p>A Player committing an infraction may receive a Player Warning. Player Warnings do not come with any immediate consequence, but will accumulate over the course of a competition. If a Player accumulates three Player Warnings, a Player Penalty will be immediately assessed and three Player Warnings will be cleared. All Player Warnings accumulated will be cleared between certain competition stages (e.g. prior to the start of a League Postseason and immediately after the conclusion of a League Postseason).</p>
+<h4 id="player-penalty">Player Penalty</h4>
+<p>For a major infraction or repeated minor infractions, a Player may receive a Player Penalty. A Player Penalty will come with an immediate one-competition-round Suspension. Player Penalties will accumulate over the course of a competition. If a Player receives two Player Penalties over the course of a competition, the Player will be immediately Suspended for the remainder of the competition. Player Penalties will generally be cleared between competitions (though they may carry over to a future competition at the discretion of a competition administrator).</p>
+<h4 id="suspension">Suspension</h4>
+<p>When necessary, a Player may be Suspended for some period of time. During the course of a Suspension, the player may not play for any team within the competition(s) they have been Suspended in. Any Team attempting to use a Player during their Suspension will receive a Team Warning, and any games the Player plays in will be Forfeited by the Team using the player. A Player will also have their Suspension extended if they attempt to play while Suspended. A Suspension may apply to multiple competitions and be extended after the end of a competition to the next edition if needed.</p>
+<h2 id="enforcement">Enforcement</h2>
+<h3 id="structure">Structure</h3>
+<p>All competitions conducted by NACL are under the purview of the NACL’s Competition Director.</p>
+<p>For each competition, there will be one or more head administrators, who report directly to the Competition Director and are responsible for the overall conduct of the competition. Under these head administrators will be a number of admins, some designated as senior, who may be further organized as needed by the competition.</p>
+<p>Only the NACL’s Competition Director and a competition’s administrators are empowered to make administrative decisions regarding a given competition. (Generally, the decisions are to be made by a competition’s administrators, with the NACL’s Competition Director intervening in extraordinary or otherwise justified circumstances.) Other staff within NACL may advise the administrators, but may not take direct action.</p>
+<h3 id="process">Process</h3>
+<p>When taking action, an assigned competition administrator should do so following this rules document. Administrators who are participating within the competition must recuse themselves from any matters involving their own Team or any Team they are directly or indirectly competing against.</p>
+<p>If an affected party believes an action is incorrect, they may request a review of the decision by a more senior administrator. The senior administrator may overturn the action if the earlier decision was made based on incorrect information, based an invalid application of the rules, or would contravene the spirit of competition and cause irreparable and unjustifiable harm.</p>
+<h3 id="extraordinary-action">Extraordinary Action</h3>
+<p>While these rules are written generally to apply to a wide variety of situations, there may be situations which are not adequately covered or in which the normal application of the rules would be contrary to competitive integrity and spirit. In such circumstances, senior competition administrators are empowered to take extraordinary action not specified by these rules. Any such action is directly appealable to the NACL’s Competition Director.</p>
+<h2 id="league">League</h2>
+<h3 id="divisions">Divisions</h3>
+<p>Each league season will attempt to have five divisions:</p>
+<ul>
+<li>Invite</li>
+<li>Advanced</li>
+<li>Intermediate</li>
+<li>Novice</li>
+<li>Fundamental</li>
+</ul>
+<h3 id="format">Format</h3>
+<p>The Invite division regular season is conducted in a double-round-robin group stage, where each Team plays every other Team twice in the course of a season. Each Team will have up to two matches per round with each match having a different opponent. The schedule will be organized such that each pair of Teams plays once during each half of the regular season. Each regular season match is played as a single game, with the map determined by veto. The top four Teams will proceed to a double-elimination postseason, where each match is played as a best-of-three series (except for the grand final, which is played as a best-of-five series).</p>
+<p>The Advanced division regular season is conducted in a single-round-robin group stage, where each Team plays every other Team once in the course of a season. Each Team will have up to two matches per round with each match having a different opponent. Each regular season match is played as a single game, with the map determined by veto. The top eight Teams will proceed to a single-elimination postseason, where each match is played as a best-of-three series.</p>
+<p>The Intermediate and Novice regular seasons are conducted as a Swiss group stage, where each Team plays one opponent per round based on its prior performance during the season. Each regular season match is played as two games, with the maps predetermined based on the week. A selected number of Teams (not to exceed half of the division) will proceed to a single-elimination postseason, where each match is played as a best-of-three series.</p>
+<p>The Fundamental division season is conducted as a Swiss group stage, where each Team playes one opponent per round based on its prior performance during the season. Each regular season match is played as one game, with the map predetermined based on the week. The Fundamental division has no postseason.</p>
+<h3 id="consolidation">Consolidation</h3>
+<p>The divisions are expected to have the following sizes:</p>
+<ul>
+<li>Invite - 5-9 teams</li>
+<li>Advanced - 9-17 teams</li>
+<li>Intermediate - 16+ teams</li>
+<li>Novice - 16+ teams</li>
+<li>Fundamental - 8+ teams</li>
+</ul>
+<p>Consolidation of the divisions will take place as follows:</p>
+<ol type="1">
+<li>If there are not enough teams to form a viable Fundamental division, the teams in the Fundamental division will be placed in the Novice division.</li>
+<li>If there are not enough teams to form a viable Invite division, the teams in the Invite division will be placed in the Advanced division.</li>
+<li>If there are not enough teams to form a viable Advanced division, the teams in the Advanced division will be placed in the Intermediate division.</li>
+<li>If there are not enough teams to form a viable Intermediate division, or not enough teams to form a viable Novice division, the Intermediate and Novice divisions will be combined to form a single Open division.</li>
+</ol>
+<h3 id="team-placement">Team Placement</h3>
+<p>Teams playing in the league will be required to submit their rosters (including starting Lineup) as well as scrimmage results against other teams. Based on this information, the Team will be placed into the division administrators feel is most appropriate for them.</p>
+<p>If too many Teams are deemed competitive for a limited number of spots in the Invite or Advanced divisions, placement tournaments will be held to determine which division the Teams are placed in.</p>
+<p>Certain Teams will be automatically placed based on the results of the previous season:</p>
+<ul>
+<li>The top 4 teams in the Invite division will receive automatic placement into next season’s Invite division.</li>
+<li>The winner of the Advanced division will be guaranteed a spot in next season’s Invite placement tournament; if no placement tournament occurs, it will be placed in the Invite division.</li>
+<li>The winner of the Intermediate division will be guaranteed a spot in next season’s Advanced placement tournament; if no placement tournament occurs, it will be placed in the Advanced division.</li>
+</ul>
+<p>In order to be automatically placed by this process, a Team must maintain in their starting Lineup for the new season a majority of Players from the final Lineup utilized during the previous postseason.</p>
+<h3 id="game-configuration">Game Configuration</h3>
+<h4 id="map-format">Map Format</h4>
+<p>The following map formats will be used.</p>
+<h5 id="standard-control-point">Standard Control Point</h5>
+<p>Standard Control Point maps will be played with a 30-minute timelimit and a 5-round win limit. If both Teams are tied at the end of the timelimit and the tie needs to be broken, an extra period with no timelimit and a 1-round win limit will be played.</p>
+<h5 id="king-of-the-hill">King of the Hill</h5>
+<p>King of the Hill maps will be played with a 3-round win limit.</p>
+<h4 id="class-limits">Class Limits</h4>
+<p>The following class limits shall be used:</p>
+<ul>
+<li>2 Scouts</li>
+<li>2 Soldiers</li>
+<li>2 Pyros</li>
+<li>1 Demoman</li>
+<li>1 Heavy</li>
+<li>1 Engineer</li>
+<li>1 Medic</li>
+<li>1 Sniper</li>
+<li>1 Spy</li>
+</ul>
+<p>If a game update affecting class balance is released during the course of the season, these limits may be altered accordingly.</p>
+<h4 id="item-whitelist">Item Whitelist</h4>
+<p>The most recent version of the global whitelist (prior to season start) shall be used for the season. If a game update affecting class and/or item balance is released during the course of the season, the whitelist may be altered accordingly.</p>
+<h4 id="maps">Maps</h4>
+<p>The map pool will be specified prior to the start of the season. If maps are updated during the course of the season, the map pool may be updated accordingly.</p>
