@@ -1,0 +1,12 @@
+#!/bin/sh
+
+cat > public/rules.html.txt << END
+<h1>Rule book</h1>
+<p>Last updated: $(date --iso)</p>
+END
+
+pandoc $1 -s --toc --from markdown --to html5 \
+    | tail -n +18 \
+    | head -n -2 \
+    >> public/rules.html.txt
+

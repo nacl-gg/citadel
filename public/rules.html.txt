@@ -1,5 +1,6 @@
-<h1>Ruleset</h1>
-<p>Last update: 2019-07-20</p>
+<h1>Rule book</h1>
+<p>Last updated: 2019-07-21</p>
+<body>
 <nav id="TOC" role="doc-toc">
 <ul>
 <li><a href="#rosters">Rosters</a><ul>
@@ -44,7 +45,7 @@
 <h2 id="rosters">Rosters</h2>
 <h3 id="restrictions">Restrictions</h3>
 <p>There is no limit to the number of Players a Team roster may have. Prior to the start of a competition, the roster a Team intends to use must be submitted for consideration by administrators, including the intended starting Lineup.</p>
-<p>While the competition is ongoing, a Team may only add four players to its roster. Additions may take place at any time before a specified roster lock period; any additions made during a roster lock period require approval from a competition administrator.</p>
+<p>While the competition is ongoing, a Team may only add a total of four players to its roster. Additions may take place at any time before a specified roster lock period; any additions made during a roster lock period require approval from a competition administrator.</p>
 <p>Players may transfer between Teams in the same division while a competition is active without restriction. A Player joining a roster for the first time while a competition is active or transferring to a Team roster in a different division must obtain administrator approval to do so.</p>
 <h3 id="match-eligibility">Match Eligibility</h3>
 <p>For each match, a Team must provide a complete Lineup that is Eligible to play; failure to do so may result in the Team being assessed with a Team Penalty and/or forfeiting a game or match.</p>
@@ -64,6 +65,7 @@
 <p>If a Team fails to respond by a given deadline, it will be assessed a Team Warning, and the match may be scheduled without their input; if the Team’s failure to respond prevents the match from being played, the Team will Forfeit the match.</p>
 <h3 id="servers">Servers</h3>
 <p>Servers used to play a match must be configured as specified by NACL. Failure to use a server with the correct configuration may result in one or both Teams being assessed a Team Warning, and in egregious cases Forfeiting the match.</p>
+<p>The server must provide live SourceTV access, either via direct connection to the server’s built-in broadcast or via a relay connected to the server, to any and all who request access. Failure to provide properly configured SourceTV access may result in one or both teams being assessed a Team Warning. In specified lower divisions, this requirement may be waived at the discretion of a competition administrator for a given match.</p>
 <p>The same server shall be used to play the entire match, except in extreme circumstances that require the server to be changed (such as multiple Players having connection issues or the server itself being unstable). Both Teams must verify that the server is suitable to play the match prior to match start, and may request a server change if the server is unsuitable due to connection issues or instability.</p>
 <p>Unless Teams come to a mutual agreement otherwise, the server used for the match must be located in the central United States (e.g. Chicago).</p>
 <h3 id="match-start">Match Start</h3>
@@ -170,7 +172,7 @@
 <p>Only the NACL’s Competition Director and a competition’s administrators are empowered to make administrative decisions regarding a given competition. (Generally, the decisions are to be made by a competition’s administrators, with the NACL’s Competition Director intervening in extraordinary or otherwise justified circumstances.) Other staff within NACL may advise the administrators, but may not take direct action.</p>
 <h3 id="process">Process</h3>
 <p>When taking action, an assigned competition administrator should do so following this rules document. Administrators who are participating within the competition must recuse themselves from any matters involving their own Team or any Team they are directly or indirectly competing against.</p>
-<p>If an affected party believes an action is incorrect, they may request a review of the decision by a more senior administrator. The senior administrator may overturn the action if the earlier decision was made based on incorrect information, based an invalid application of the rules, or would contravene the spirit of competition and cause irreparable and unjustifiable harm.</p>
+<p>If an affected party believes an action is incorrect, they may request a review of the decision by a more senior administrator. The senior administrator may overturn the action if the earlier decision was made based on incorrect information, based on an invalid application of the rules, or would contravene the spirit of competition and cause irreparable and unjustifiable harm.</p>
 <h3 id="extraordinary-action">Extraordinary Action</h3>
 <p>While these rules are written generally to apply to a wide variety of situations, there may be situations which are not adequately covered or in which the normal application of the rules would be contrary to competitive integrity and spirit. In such circumstances, senior competition administrators are empowered to take extraordinary action not specified by these rules. Any such action is directly appealable to the NACL’s Competition Director.</p>
 <h2 id="league">League</h2>
@@ -183,9 +185,10 @@
 <li>Novice</li>
 <li>Fundamental</li>
 </ul>
+<p>Intermediate, Novice, and Fundamental are specified as lower divisions, with certain rules relaxed.</p>
 <h3 id="format">Format</h3>
-<p>The Invite division regular season is conducted in a double-round-robin group stage, where each Team plays every other Team twice in the course of a season. Each Team will have up to two matches per round with each match having a different opponent. The schedule will be organized such that each pair of Teams plays once during each half of the regular season. Each regular season match is played as a single game, with the map determined by veto. The top four Teams will proceed to a double-elimination postseason, where each match is played as a best-of-three series (except for the grand final, which is played as a best-of-five series).</p>
-<p>The Advanced division regular season is conducted in a single-round-robin group stage, where each Team plays every other Team once in the course of a season. Each Team will have up to two matches per round with each match having a different opponent. Each regular season match is played as a single game, with the map determined by veto. The top eight Teams will proceed to a single-elimination postseason, where each match is played as a best-of-three series.</p>
+<p>The Invite division regular season is conducted as a double-round-robin group stage, where each Team plays every other Team twice in the course of a season. Each Team will have up to two matches per round with each match having a different opponent. The schedule will be organized such that each pair of Teams plays once during each half of the regular season. Each regular season match is played as a single game, with the map determined by veto. The top four Teams will proceed to a double-elimination postseason, where each match is played as a best-of-three series (except for the grand final, which is played as a best-of-five series).</p>
+<p>The Advanced division regular season is conducted as a single-round-robin group stage, where each Team plays every other Team once in the course of a season. Each Team will have up to two matches per round with each match having a different opponent. Each regular season match is played as a single game, with the map determined by veto. The top eight Teams will proceed to a single-elimination postseason, where each match is played as a best-of-three series.</p>
 <p>The Intermediate and Novice regular seasons are conducted as a Swiss group stage, where each Team plays one opponent per round based on its prior performance during the season. Each regular season match is played as two games, with the maps predetermined based on the week. A selected number of Teams (not to exceed half of the division) will proceed to a single-elimination postseason, where each match is played as a best-of-three series.</p>
 <p>The Fundamental division season is conducted as a Swiss group stage, where each Team playes one opponent per round based on its prior performance during the season. Each regular season match is played as one game, with the map predetermined based on the week. The Fundamental division has no postseason.</p>
 <h3 id="consolidation">Consolidation</h3>
@@ -203,6 +206,7 @@
 <li>If there are not enough teams to form a viable Invite division, the teams in the Invite division will be placed in the Advanced division.</li>
 <li>If there are not enough teams to form a viable Advanced division, the teams in the Advanced division will be placed in the Intermediate division.</li>
 <li>If there are not enough teams to form a viable Intermediate division, or not enough teams to form a viable Novice division, the Intermediate and Novice divisions will be combined to form a single Open division.</li>
+<li>If there are not enough teams to form a viable Open division, the teams in the Invite division will be placed in the Open division.</li>
 </ol>
 <h3 id="team-placement">Team Placement</h3>
 <p>Teams playing in the league will be required to submit their rosters (including starting Lineup) as well as scrimmage results against other teams. Based on this information, the Team will be placed into the division administrators feel is most appropriate for them.</p>
@@ -210,10 +214,10 @@
 <p>Certain Teams will be automatically placed based on the results of the previous season:</p>
 <ul>
 <li>The top 4 teams in the Invite division will receive automatic placement into next season’s Invite division.</li>
-<li>The winner of the Advanced division will be guaranteed a spot in next season’s Invite placement tournament; if no placement tournament occurs, it will be placed in the Invite division.</li>
-<li>The winner of the Intermediate division will be guaranteed a spot in next season’s Advanced placement tournament; if no placement tournament occurs, it will be placed in the Advanced division.</li>
+<li>The winner of the Advanced division will receive either automatic placement into next season’s Invite division or an invite to next season’s Invite placement tournament.</li>
+<li>The winner of the Intermediate division will receive either automatic placement into next season’s Advanced division or an invite to next season’s Advanced placement tournament.</li>
 </ul>
-<p>In order to be automatically placed by this process, a Team must maintain in their starting Lineup for the new season a majority of Players from the final Lineup utilized during the previous postseason.</p>
+<p>In order to be automatically placed by this process, a Team must maintain in their starting Lineup for the next season a majority of Players from the final Lineup utilized during the previous postseason, and must not be otherwise sanctioned by NACL in a way that would nullify the automatic placement.</p>
 <h3 id="game-configuration">Game Configuration</h3>
 <h4 id="map-format">Map Format</h4>
 <p>The following map formats will be used.</p>
