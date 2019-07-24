@@ -146,11 +146,11 @@ describe League::Match do
       round_fn = -> { League::Match::Round.new(map: map) }
       rounds = [round_fn.call, round_fn.call, round_fn.call]
       match = build(:league_match, rounds: rounds, has_winner: true, allow_round_draws: false)
-      rounds.each { |round|
+      rounds.each do |round|
         round.logs_id = 0
         round.demos_id = 0
         round.run_callbacks(:save)
-      }
+      end
 
       expect(match).to be_valid
       match.run_callbacks(:save) do
