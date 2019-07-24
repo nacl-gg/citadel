@@ -23,7 +23,7 @@ describe League::Match::Round do
 
   def build_round(match, home_team_score, away_team_score)
     build(:league_match_round, match: match, home_team_score: home_team_score, away_team_score: away_team_score,
-                               has_outcome: true)
+                               has_outcome: true, logs_id: 0, demos_id: 0)
   end
 
   describe 'validation' do

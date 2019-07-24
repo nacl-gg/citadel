@@ -69,7 +69,7 @@ describe League::Match do
 
         match.status = :submitted_by_home_team
         match.forfeit_by = :mutual_forfeit
-        match.rounds = [build(:league_match_round, match: match, home_team_score: 0, away_team_score: 0)]
+        match.rounds = [build(:league_match_round, match: match, home_team_score: 0, away_team_score: 0, logs_id: 0, demos_id: 0)]
 
         match.run_callbacks(:validation) do
           expect(match.status).to eq('confirmed')
@@ -80,9 +80,9 @@ describe League::Match do
 
       it 'updates round outcomes' do
         map = build(:map)
-        rounds = [League::Match::Round.new(map: map, home_team_score: 0, away_team_score: 1),
-                  League::Match::Round.new(map: map, home_team_score: 0, away_team_score: 1),
-                  League::Match::Round.new(map: map, home_team_score: 2, away_team_score: 1)]
+        rounds = [League::Match::Round.new(map: map, home_team_score: 0, away_team_score: 1, logs_id: 0, demos_id: 0),
+                  League::Match::Round.new(map: map, home_team_score: 0, away_team_score: 1, logs_id: 0, demos_id: 0),
+                  League::Match::Round.new(map: map, home_team_score: 2, away_team_score: 1, logs_id: 0, demos_id: 0)]
         match = build(:league_match, rounds: rounds, has_winner: true)
 
         match.status = :pending
@@ -146,7 +146,11 @@ describe League::Match do
       round_fn = -> { League::Match::Round.new(map: map) }
       rounds = [round_fn.call, round_fn.call, round_fn.call]
       match = build(:league_match, rounds: rounds, has_winner: true, allow_round_draws: false)
-      rounds.each { |round| round.run_callbacks(:save) }
+      rounds.each { |round|
+        round.logs_id = 0
+        round.demos_id = 0
+        round.run_callbacks(:save)
+      }
 
       expect(match).to be_valid
       match.run_callbacks(:save) do
@@ -232,11 +236,11 @@ describe League::Match do
   describe 'calculations' do
     it 'calculates score totals before save' do
       map = build(:map)
-      rounds = [League::Match::Round.new(map: map, home_team_score: 0, away_team_score: 1),
-                League::Match::Round.new(map: map, home_team_score: 0, away_team_score: 5),
-                League::Match::Round.new(map: map, home_team_score: 3, away_team_score: 2),
-                League::Match::Round.new(map: map, home_team_score: 2, away_team_score: 2),
-                League::Match::Round.new(map: map, home_team_score: 4, away_team_score: 0)]
+      rounds = [League::Match::Round.new(map: map, home_team_score: 0, away_team_score: 1, logs_id: 0, demos_id: 0),
+                League::Match::Round.new(map: map, home_team_score: 0, away_team_score: 5, logs_id: 0, demos_id: 0),
+                League::Match::Round.new(map: map, home_team_score: 3, away_team_score: 2, logs_id: 0, demos_id: 0),
+                League::Match::Round.new(map: map, home_team_score: 2, away_team_score: 2, logs_id: 0, demos_id: 0),
+                League::Match::Round.new(map: map, home_team_score: 4, away_team_score: 0, logs_id: 0, demos_id: 0)]
       match = build(:league_match, rounds: rounds, has_winner: false, allow_round_draws: true, status: :confirmed)
 
       rounds.each { |round| round.run_callbacks(:save) }

@@ -266,7 +266,7 @@ describe Leagues::MatchesController do
         patch :submit, params: {
           id: match.id, match: {
             status: :confirmed, rounds_attributes: {
-              id: round.id, home_team_score: 2, away_team_score: 5
+              id: round.id, home_team_score: 2, away_team_score: 5, logs_id: 0, demos_id: 0
             }
           }
         }
@@ -296,7 +296,7 @@ describe Leagues::MatchesController do
 
         patch :submit, params: {
           id: match.id, match: {
-            rounds_attributes: { id: round.id, home_team_score: 2, away_team_score: 5 },
+            rounds_attributes: { id: round.id, home_team_score: 2, away_team_score: 5, logs_id: 0, demos_id: 0 },
           }
         }
 
@@ -314,7 +314,7 @@ describe Leagues::MatchesController do
         patch :submit, params: {
           id: match.id, match: {
             rounds_attributes: {
-              id: round.id, home_team_score: 2, away_team_score: 5
+              id: round.id, home_team_score: 2, away_team_score: 5, logs_id: 0, demos_id: 0
             },
           }
         }
@@ -348,7 +348,7 @@ describe Leagues::MatchesController do
         patch :submit, params: {
           id: match.id, match: {
             status: :confirmed, rounds_attributes: {
-              id: round.id, home_team_score: 2, away_team_score: 5
+              id: round.id, home_team_score: 2, away_team_score: 5, logs_id: 0, demos_id: 0
             }
           }
         }
@@ -365,7 +365,7 @@ describe Leagues::MatchesController do
         patch :submit, params: {
           id: match.id, match: {
             rounds_attributes: {
-              id: round.id, home_team_score: 2, away_team_score: 5
+              id: round.id, home_team_score: 2, away_team_score: 5, logs_id: 0, demos_id: 0
             },
           }
         }
@@ -382,7 +382,7 @@ describe Leagues::MatchesController do
       end
 
       let!(:round) do
-        create(:league_match_round, match: match, home_team_score: 2, away_team_score: 3)
+        create(:league_match_round, match: match, home_team_score: 2, away_team_score: 3, logs_id: 0, demos_id: 0)
       end
 
       it 'succeeds for admin user' do
