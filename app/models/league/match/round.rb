@@ -64,11 +64,8 @@ class League
           http.get URI.parse("https://logs.tf/json/#{logs_id}")
         end
         json = JSON.parse(resp.body)
-        (json['players'] or []).each do |p|
-          if p[0].starts_with? "["
-            p[0] = p[0][1..-2]
-          end
-
+        (json['players'] || []).each do |p|
+          p[0] = p[0][1..-2] if p[0].starts_with? '['
           user = User.find_by(steam_id: SteamId.to_64(p[0]))
           p[1]['name'] = user ? user.name : 'UNREGISTERED'
         end
@@ -93,9 +90,11 @@ class League
       def validate_scores
         return if match.blank?
 
-        errors.add(:away_team_score, 'Cannot be tied') if has_outcome? && !match.allow_round_draws? && draw?
-        errors.add(:logs_id, 'Must reference logs.tf ID') if has_outcome? && !logs?
-        errors.add(:demos_id, 'Must reference demos.tf ID') if has_outcome? && self.demos_id.nil?
+        if has_outcome?
+          errors.add(:away_team_score, 'Cannot be tied') if !match.allow_round_draws? && draw?
+          errors.add(:logs_id, 'Must reference logs.tf ID') unless logs?
+          errors.add(:demos_id, 'Must reference demos.tf ID') if demos_id.nil?
+        end
       end
     end
   end

@@ -69,7 +69,8 @@ describe League::Match do
 
         match.status = :submitted_by_home_team
         match.forfeit_by = :mutual_forfeit
-        match.rounds = [build(:league_match_round, match: match, home_team_score: 0, away_team_score: 0, logs_id: 0, demos_id: 0)]
+        match.rounds = [build(:league_match_round, match: match, home_team_score: 0, away_team_score: 0,
+                                                   logs_id: 0, demos_id: 0)]
 
         match.run_callbacks(:validation) do
           expect(match.status).to eq('confirmed')

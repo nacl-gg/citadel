@@ -142,7 +142,8 @@ module Leagues
 
     def report_scores_by_team_params
       attrs = params.require(:match)
-                    .permit(rounds_attributes: [:id, :home_team_score, :away_team_score, :logs_id, :demos_id, :gc_demos_id])
+                    .permit(rounds_attributes: [:id, :home_team_score, :away_team_score,
+                                                :logs_id, :demos_id, :gc_demos_id])
 
       attrs[:status] = if user_can_home_team?
                          :submitted_by_home_team
