@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_29_010523) do
+ActiveRecord::Schema.define(version: 2019_07_24_095752) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_trgm"
@@ -301,6 +301,8 @@ ActiveRecord::Schema.define(version: 2019_04_29_010523) do
     t.boolean "has_outcome", default: false, null: false
     t.decimal "score_difference", precision: 20, scale: 6, default: "0.0", null: false
     t.integer "logs_id"
+    t.integer "demos_id"
+    t.integer "gc_demos_id"
     t.index ["loser_id"], name: "index_league_match_rounds_on_loser_id"
     t.index ["map_id"], name: "index_league_match_rounds_on_map_id"
     t.index ["match_id"], name: "index_league_match_rounds_on_match_id"

@@ -1,16 +1,16 @@
 = bootstrap_form_for match, as: :match, url: submit_match_path(match) do |f|
-  = f.errors_on :base
+  = f.error_summary
   = f.fields_for :rounds, rounds do |ff|
     .row.form-group
-      .form-inline
+      .form
         - round_p = present(ff.object)
-        = round_p.map.link
-        \:
-        .form-group.pull-right
-          = ff.number_field :home_team_score, label: "'#{match.home_team.name}'s score"
-          = ff.number_field :away_team_score, label: "'#{match.away_team.name}'s score"
-        .form-group.pull-right
-          = ff.text_field :logs_id, label: 'Logs.tf ID (number from the URL)'
+        %h2
+          = round_p.map.link
+        = ff.number_field :home_team_score, label: "'#{match.home_team.name}'s score"
+        = ff.number_field :away_team_score, label: "'#{match.away_team.name}'s score"
+        = ff.text_field :logs_id, label: 'Logs.tf ID (number from the URL)'
+        = ff.text_field :demos_id, label: 'Demos.tf ID (number from the URL)'
+        = ff.text_field :gc_demos_id, label: 'Golden Cap Demos.tf ID'
 
   - if user_can_edit_league?
     = f.select(:status, League::Match.statuses.keys.map { |s| [s.humanize, s] })

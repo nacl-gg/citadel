@@ -1,4 +1,4 @@
-- if match.rounds.any?(&:has_logs?)
+- if match.rounds.any?(&:logs?)
   .panel.panel-default
     .panel-heading
       %ul.nav.nav-pills
@@ -18,7 +18,7 @@
         - klass = round == target_round ? ' in active' : ''
 
         %div{ id: "logs-#{round.id}", class: 'tab-pane fade' + klass }
-          - if round.has_logs?
+          - if round.logs?
             = render 'leagues/matches/logs_table', round: round
           - else
             Logs were not provided yet
