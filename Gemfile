@@ -95,7 +95,7 @@ group :development do
   gem 'active_record_doctor', require: false
 
   # Development scripts
-  gem 'capistrano', '~> 3.1', require: false
+  gem 'capistrano', '~> 3.11', require: false
   gem 'capistrano-rvm', require: false
   gem 'capistrano-bundler', require: false
   gem 'capistrano-rails', require: false
